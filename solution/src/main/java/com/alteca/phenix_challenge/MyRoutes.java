@@ -13,7 +13,7 @@ public class MyRoutes  extends RouteBuilder{
          DataFormat bindy = new BindyCsvDataFormat(com.alteca.phenix_challenge.model.RefProduit.class);
          DataFormat bindy2 = new BindyCsvDataFormat(com.alteca.phenix_challenge.model.Transaction.class);
 		
-		from("file://C:/Users/jpledref/Desktop/phenix-challenge/data?include=.*data$&sendEmptyMessageWhenIdle=true")
+		from("file://data?include=.*data$&sendEmptyMessageWhenIdle=true")
 		.choice()
 			.when().simple("${in.body} == null")
 				//.to("Calculation")
@@ -62,7 +62,7 @@ public class MyRoutes  extends RouteBuilder{
 		;
 		
 		from("direct://save2File")
-		.to("file://C:/Users/jpledref/Desktop/phenix-challenge/results/");		
+		.to("file://results/");		
 		
 	}
 

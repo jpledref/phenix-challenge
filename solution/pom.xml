@@ -94,7 +94,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.shcompany.java.poc.opencv.App</mainClass>
+							<mainClass>com.alteca.phenix_challenge.App</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
